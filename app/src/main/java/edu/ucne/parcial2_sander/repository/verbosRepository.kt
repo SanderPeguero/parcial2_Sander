@@ -10,10 +10,10 @@ import javax.inject.Inject
 //val nivel: String,
 //val imagen: String
 
-class articuloRepository @Inject constructor(
+class verboRepository @Inject constructor(
     val api: API
 ){
-    suspend fun getVerbo() {
+    suspend fun getVerbos() {
 
         val listaDto = api.getVerbos()
 
