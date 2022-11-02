@@ -5,7 +5,7 @@ import retrofit2.http.GET
 
 interface API{
 
-    @GET("/")
+    @GET("/verbos")
     suspend fun getVerbos(): List<verboDTO>
 
 }
