@@ -1,5 +1,6 @@
 package edu.ucne.parcial2_sander.repository
 
+import edu.ucne.parcial2_sander.model.Verbo
 import edu.ucne.parcial2_sander.remote.verboDTO
 import edu.ucne.parcial2_sander.remote.API
 import javax.inject.Inject
@@ -17,7 +18,7 @@ class articuloRepository @Inject constructor(
         val listaDto = api.getVerbos()
 
         val listaEntity = listaDto.map { verboDTO ->
-            Verbos(
+            Verbo(
                 verbo = verboDTO.verbo,
                 categoria = verboDTO.categoria,
                 nivel = verboDTO.nivel,
